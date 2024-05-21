@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ item }) => {
+const Card = ({ item, action }) => {
   return (
     <div className='card-wrapper'>
       {item}
@@ -12,7 +12,7 @@ const Card = ({ item }) => {
           src={`${item.url}#t=1`}
         ></video>
       ) : (
-        <img alt='project poster' src={require(item.img)} />
+        <img alt='project poster' src={item.img} />
       )}
     </div>
   );
