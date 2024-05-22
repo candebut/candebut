@@ -8,7 +8,7 @@ let projects = [
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370802/mh4waruewqmhsf7jbx4z.mp4',
   },
   {
-    name: 'Infinito',
+    name: 'Visceral - mood trailer',
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370814/bgafagyfcflmvknupvj2.mp4',
   },
   {
@@ -58,7 +58,7 @@ const Main = () => {
           : 'No projects available'}
       </div>
       <div className='column-right'>
-        <p>projects</p>
+        <p className='projects-link'>projects</p>
         <p>cv</p>
         <p>letter of recommendation</p>
         <p>contact me</p>
