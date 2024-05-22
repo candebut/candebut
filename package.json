@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "@types/node": "^20.12.12"
-  },
-  "dependencies": {
-    "scss": "^0.2.4"
-  }
-}
