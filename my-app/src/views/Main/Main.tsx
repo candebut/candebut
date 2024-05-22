@@ -71,9 +71,9 @@ const Main = () => {
             : 'No projects available'}
         </div>
         <div className='column-right'>
-          <p>projects</p>
-          <p>cv</p>
-          <p>contact me</p>
+          <p>proyectos</p>
+          <p>currículum</p>
+          <p>contáctame</p>
           <p>prensa</p>
         </div>
       </div>
