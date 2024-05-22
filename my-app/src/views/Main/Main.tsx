@@ -5,21 +5,44 @@ import React from 'react';
 let projects = [
   {
     name: 'El chofer',
-    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370802/mh4waruewqmhsf7jbx4z.mp4',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716392013/d7wzivkj1tzsqwfp595a.mp4',
     description:
       'cortometraje - escrito por Candela Buttigliero, dirigido por Candela Buttigliero y Kike Maíllo',
   },
   {
-    name: 'Visceral - mood trailer',
-    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370814/bgafagyfcflmvknupvj2.mp4',
-    description:
-      'Mood trailer para la serie "Visceral", creada y escrita por Candela Buttigliero',
+    name: 'El cuerpo sabe',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716392352/y1uyvn2lvnr72soivrra.mp4',
+    description: 'Corto documental creado y dirigido por Candela Buttigliero',
   },
   {
     name: 'Tu mirada',
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370832/hzhbnxigbtswf3worcuu.mp4',
     description:
       'Videoclip para la banda "Eterna Inocencia", creado y escrito por Candela Buttigliero',
+  },
+  {
+    name: 'Al desnudo',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716390644/h0yaxvmjf4sjbshtnfme.mp4',
+    description:
+      'Cortometraje escrito por Candela Buttigliero y dirigido por David Moreno',
+  },
+  {
+    name: 'Infinito',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716390662/gtby70fv3gwr5kzmzzyh.mp4',
+    description:
+      'Cortometraje escrito por Candela Buttigliero y dirigido por John Araque & Frank Vera Gimenez',
+  },
+  {
+    name: 'La obra de las máscaras',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370814/bgafagyfcflmvknupvj2.mp4',
+    description:
+      'Cortometraje escrito por Candela Buttigliero y dirigido por Norman Toledo Rojas',
+  },
+  {
+    name: 'Visceral - mood trailer',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370814/bgafagyfcflmvknupvj2.mp4',
+    description:
+      'Mood trailer para la serie "Visceral", creada y escrita por Candela Buttigliero',
   },
 ];
 
