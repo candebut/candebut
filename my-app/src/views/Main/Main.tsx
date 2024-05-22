@@ -38,44 +38,52 @@ const Main = () => {
   };
 
   return (
-    <div className='main-wrapper'>
-      <div className='column-left'>
-        <p>candela buttigliero.</p>
-      </div>
-      <div className='main-projects-wrapper'>
-        {projects && projects.length
-          ? projects.map((project, index) => {
-              return (
-                <div
-                  className='project'
-                  key={`project__${project.name}-${index}`}
-                >
-                  <p>{project.name}</p>
-                  <div className='content'>
-                    <div className='content-overlay'></div>
-                    <video
-                      src={project.url}
-                      className='container'
-                      controls
-                      onMouseEnter={startPreview}
-                      onMouseLeave={stopPreview}
-                    ></video>
-                    <div className='content-details fadeIn-right'>
-                      <h3>{project.name}</h3>
-                      <p>{project.description}</p>
+    <div>
+      <div className='main-wrapper'>
+        <div className='column-left'>
+          <h3>candela buttigliero.</h3>
+        </div>
+        <div className='main-projects-wrapper'>
+          {projects && projects.length
+            ? projects.map((project, index) => {
+                return (
+                  <div
+                    className='project'
+                    key={`project__${project.name}-${index}`}
+                  >
+                    <div className='content'>
+                      <div className='content-overlay'></div>
+                      <video
+                        src={project.url}
+                        //   className='container'
+                        //   controls
+                        onMouseEnter={startPreview}
+                        onMouseLeave={stopPreview}
+                      ></video>
+                      <div className='content-details fadeIn-right'>
+                        <h3>{project.name}</h3>
+                        <p>{project.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })
-          : 'No projects available'}
+                );
+              })
+            : 'No projects available'}
+        </div>
+        <div className='column-right'>
+          <p>projects</p>
+          <p>cv</p>
+          <p>contact me</p>
+          <p>prensa</p>
+        </div>
       </div>
-      <div className='column-right'>
-        <p className='projects-link'>projects</p>
-        <p>cv</p>
-        <p>letter of recommendation</p>
-        <p>contact me</p>
-      </div>
+      <footer>
+        <p>guionista</p>
+        <div>
+          <a href='https://vimeo.com/candebut'>vimeo</a>
+          <a href='https://www.imdb.com/name/nm15293418/'>imbd</a>
+        </div>
+      </footer>
     </div>
   );
 };
