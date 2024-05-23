@@ -203,3 +203,14 @@ footer {
 .w100 {
   width: 100%;
 }
+.my-collapse {
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+
+.collapsable-wrapper {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgb(60, 60, 60);
+}
