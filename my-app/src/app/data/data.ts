@@ -35,6 +35,8 @@ export let projects = [
     back2: infinito_back2,
     back3: infinito_back3,
     text: 'Una mujer despierta en un hospital abandonado e intenta escapar de la única persona que no puede huir.',
+    premios:
+      'Sognielettrici International Film, Festival, Electricdreams International Film Festival',
   },
   {
     name: 'El cuerpo sabe',

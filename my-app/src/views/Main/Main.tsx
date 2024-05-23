@@ -3,6 +3,7 @@
 import { projects } from '@/app/data/data';
 import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import ColumnRight from '@/components/ColumnRight/ColumnRight';
+import Footer from '@/components/Footer/Footer';
 import React from 'react';
 
 const Main = () => {
@@ -50,13 +51,7 @@ const Main = () => {
         </div>
         <ColumnRight />
       </div>
-      <footer>
-        <p>guionista</p>
-        <div>
-          <a href='https://vimeo.com/candebut'>vimeo</a>
-          <a href='https://www.imdb.com/name/nm15293418/'>imbd</a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

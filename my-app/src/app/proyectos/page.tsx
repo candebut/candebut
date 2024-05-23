@@ -6,6 +6,7 @@ import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import Image from 'next/image';
 import { projects } from '../data/data';
 import ColumnRight from '@/components/ColumnRight/ColumnRight';
+import Footer from '@/components/Footer/Footer';
 
 const Proyectos = () => {
   const startPreview = (e: any) => {
@@ -113,14 +114,7 @@ const Proyectos = () => {
         </div>
         <ColumnRight />
       </div>
-      <footer>
-        <p>guionista</p>
-        <div>
-          <a href='https://www.imdb.com/name/nm15293418/'>imbd</a>
-          <a href='https://vimeo.com/candebut'>vimeo</a>
-          <a href='https://instagram.com/candebut'>instagram</a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
