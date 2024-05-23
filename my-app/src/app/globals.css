@@ -158,6 +158,22 @@ footer {
   transition: all 0.4s ease-in-out 0s;
 }
 
+.blurry {
+  background: rgba(61, 61, 61, 0.7);
+  opacity: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  backdrop-filter: blur(6px);
+}
+
 .content:hover .content-overlay {
   opacity: 1;
 }
@@ -212,5 +228,22 @@ footer {
   padding: 3rem;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dashed rgb(60, 60, 60);
+  cursor: pointer;
+  h1 {
+    font-weight: 800;
+    font-size: 76px;
+  }
+
+  .collapsable-content {
+    border-top: 1px dashed rgb(60, 60, 60);
+  }
+}
+.book {
+  cursor: pointer;
+}
+
+.books-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
