@@ -15,7 +15,9 @@ const ColumnRight = () => {
           currículum
         </a>
       </p>
-      <p onClick={() => router.push('/contactame')}>contáctame</p>
+      <p onClick={() => router.push('mailto:candelabuttigliero@gmail.com')}>
+        contáctame
+      </p>
       <p onClick={() => router.push('/prensa')}>prensa</p>
     </div>
   );
