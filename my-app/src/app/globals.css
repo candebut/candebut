@@ -249,6 +249,7 @@ footer {
 }
 
 .screenwriting {
+  margin-top: 3rem;
   display: flex;
   gap: 0.5rem;
   .images {

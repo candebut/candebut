@@ -8,6 +8,18 @@ import { projects } from '../data/data';
 // import poster from '../../../public/static/images/la_casa.png';
 
 const Proyectos = () => {
+  const startPreview = (e: any) => {
+    const vid = e.target;
+    vid.muted = true;
+    vid.play();
+  };
+
+  const stopPreview = (e: any) => {
+    const vid = e.target;
+    vid.muted = false;
+    vid.currentTime = 0;
+    vid.pause();
+  };
   return (
     <div className='w100'>
       <div className='main-wrapper'>
@@ -24,34 +36,48 @@ const Proyectos = () => {
                       key={`project__${item.name}--${index}`}
                       className='screenwriting'
                     >
-                      <div className='images'>
-                        <Image
-                          src={item.poster}
-                          width={350}
-                          height={200}
-                          alt='Picture of the author'
-                        />
-                        <div className='smaller-screenwriting'>
+                      {item.images ? (
+                        <div className='images'>
                           <Image
-                            src={item.back1}
-                            width={300}
+                            src={item.poster}
+                            width={350}
                             height={200}
                             alt='Picture of the author'
                           />
-                          <Image
-                            src={item.back2}
-                            width={300}
-                            height={200}
-                            alt='Picture of the author'
-                          />
-                          <Image
-                            src={item.back3}
-                            width={300}
-                            height={200}
-                            alt='Picture of the author'
-                          />
+                          <div className='smaller-screenwriting'>
+                            <Image
+                              src={item.back1}
+                              width={300}
+                              height={200}
+                              alt='Picture of the author'
+                            />
+                            <Image
+                              src={item.back2}
+                              width={300}
+                              height={200}
+                              alt='Picture of the author'
+                            />
+                            <Image
+                              src={item.back3}
+                              width={300}
+                              height={200}
+                              alt='Picture of the author'
+                            />
+                          </div>
                         </div>
-                      </div>
+                      ) : (
+                        <div className='content'>
+                          <video
+                            src={item.url}
+                            onMouseEnter={startPreview}
+                            onMouseLeave={stopPreview}
+                          ></video>
+                          <div className='content-details fadeIn-right'>
+                            <h3>{item.name}</h3>
+                            <p>{item.description}</p>
+                          </div>
+                        </div>
+                      )}
                       <div className='text'>
                         <h2>{item.name}</h2>
                         <p>{item.description}</p>

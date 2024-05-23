@@ -2,6 +2,9 @@ import elchofer_poster from '../../../public/static/images/el_chofer_poster.jpg'
 import elchofer_back from '../../../public/static/images/elchofer_back.jpg';
 import elchofer_back2 from '../../../public/static/images/elchofer_back2.jpg';
 import elchofer_back3 from '../../../public/static/images/roberto.webp';
+import infinito_poster from '../../../public/static/images/infinito_poster.jpg';
+import infinito_back from '../../../public/static/images/infinito_back.jpg';
+import infinito_back2 from '../../../public/static/images/infinito_back2.jpg';
 
 export let projects = [
   {
@@ -9,6 +12,7 @@ export let projects = [
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716451272/bg1igrcers6287wihsjx.mp4',
     description:
       'Cortometraje escrito por Candela Buttigliero, dirigido por Candela Buttigliero y Kike Maíllo',
+    images: true,
     poster: elchofer_poster,
     back1: elchofer_back,
     back2: elchofer_back2,
@@ -24,10 +28,11 @@ export let projects = [
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716390662/gtby70fv3gwr5kzmzzyh.mp4',
     description:
       'Cortometraje escrito por Candela Buttigliero y dirigido por John Araque & Frank Vera Gimenez',
-    poster: '',
-    back1: '',
-    back2: '',
-    text: '',
+    images: true,
+    poster: infinito_poster,
+    back1: infinito_back,
+    back2: infinito_back2,
+    text: 'Una mujer despierta en un hospital abandonado e intenta escapar de la única persona que no puede huir.',
   },
   {
     name: 'El cuerpo sabe',
@@ -56,7 +61,7 @@ export let projects = [
     poster: '',
     back1: '',
     back2: '',
-    text: '',
+    text: 'Ángel es adicto al sexo y no es capaz de contárselo a nadie. Luego de perder su matrimonio, comienza una terapia con el objetivo de recuperar su vida. Sus amigos, sospechando que su sospresiva ausencia durante los últimos meses se debe al dolor del divorcio, deciden sacarlo de fiesta y rememorar viejos tiempos. Contratan, para ello, los servicios de Olivia: una jóven prostituta que transita su convivencia con sus propias contradicciones. Mientras cuenta los minutos y una inesperada conexión se construye entre ellos, Ángel batalla contra su deseo y contra su peor enemigo: el temor a ser vulnerable.',
   },
   {
     name: 'La obra de las máscaras',
@@ -66,7 +71,7 @@ export let projects = [
     poster: '',
     back1: '',
     back2: '',
-    text: '',
+    text: 'Álvaro tiene un problema: todo lo que hace está ensayado. Tras un reencuentro con su ex-novia, Marina, durante el casting para una obra de teatro, se ve obligado a enfrentarse a sí mismo y a una verdad para la que no puede prepararse: en su búsqueda de ser perfecto, ha perdido la capacidad de ser genuino.  ',
   },
   //   {
   //     name: 'Visceral - mood trailer',
