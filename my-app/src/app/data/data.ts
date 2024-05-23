@@ -92,3 +92,22 @@ export let projects = [
   //     text: '',
   //   },
 ];
+
+export const wipProjects = [
+  {
+    name: 'Visceral',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716451272/bg1igrcers6287wihsjx.mp4',
+    description:
+      'Cortometraje escrito por Candela Buttigliero, dirigido por Candela Buttigliero y Kike Maíllo',
+    images: true,
+    poster: elchofer_poster,
+    back1: elchofer_back,
+    back2: elchofer_back2,
+    back3: elchofer_back3,
+    text: 'Cuando un trágico evento marca su vida para siempre, Rodolfo, el chofer de una familia de clase alta, comienza a escabullirse con el coche para ofrecer sus servicios como Uber. Este trabajo oculta un particular objetivo: vengarse.',
+    link: 'https://www.filmin.es/corto/el-chofer',
+    linkText: 'Filmin',
+    link2: 'https://www.movistarplus.es/cine/el-chofer/ficha?tipo=E&id=3122921',
+    link2Text: 'Movistar+',
+  },
+];

@@ -39,7 +39,11 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
           <div className='collapsable-wrapper' onClick={handleFilterOpening}>
             <h1 className='font-weight-bold'>{title}</h1>
             <button type='button' className='btn' onClick={handleFilterOpening}>
-              {!isOpen ? <FaChevronDown /> : <FaChevronUp />}
+              {!isOpen ? (
+                <FaChevronDown onClick={handleFilterOpening} />
+              ) : (
+                <FaChevronUp onClick={handleFilterOpening} />
+              )}
             </button>
           </div>
         </div>

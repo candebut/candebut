@@ -286,16 +286,33 @@ footer {
     flex-direction: row;
     gap: 5px;
     a {
-      color: hsla(196, 61%, 58%, 0.75);
+      color: hsla(196, 55%, 68%, 0.75);
     }
   }
 }
 .sobre-mi-wrapper {
   display: flex;
   align-items: center;
-  gap: 1rem;
-
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
   a {
-    color: hsla(196, 61%, 58%, 0.75);
+    color: hsla(196, 55%, 68%, 0.75);
+  }
+}
+
+.abort-turn {
+  transform: rotate(-90deg);
+  a {
+    color: white !important;
+  }
+  p {
+    height: 80px;
   }
 }
