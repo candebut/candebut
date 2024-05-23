@@ -5,7 +5,7 @@ import React from 'react';
 import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import Image from 'next/image';
 import { projects } from '../data/data';
-// import poster from '../../../public/static/images/la_casa.png';
+import ColumnRight from '@/components/ColumnRight/ColumnRight';
 
 const Proyectos = () => {
   const startPreview = (e: any) => {
@@ -40,7 +40,7 @@ const Proyectos = () => {
                         <div className='images'>
                           <Image
                             src={item.poster}
-                            width={350}
+                            width={400}
                             height={200}
                             alt='Picture of the author'
                           />
@@ -111,12 +111,7 @@ const Proyectos = () => {
             Gravida rutrum quisque non tellus orci ac auctor augue
           </Collapsable>
         </div>
-        <div className='column-right'>
-          <p>proyectos</p>
-          <p>currículum</p>
-          <p>contáctame</p>
-          <p>prensa</p>
-        </div>
+        <ColumnRight />
       </div>
       <footer>
         <p>guionista</p>

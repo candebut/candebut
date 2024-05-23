@@ -5,6 +5,7 @@ import elchofer_back3 from '../../../public/static/images/roberto.webp';
 import infinito_poster from '../../../public/static/images/infinito_poster.jpg';
 import infinito_back from '../../../public/static/images/infinito_back.jpg';
 import infinito_back2 from '../../../public/static/images/infinito_back2.jpg';
+import infinito_back3 from '../../../public/static/images/infinito_back3.jpg';
 
 export let projects = [
   {
@@ -32,6 +33,7 @@ export let projects = [
     poster: infinito_poster,
     back1: infinito_back,
     back2: infinito_back2,
+    back3: infinito_back3,
     text: 'Una mujer despierta en un hospital abandonado e intenta escapar de la única persona que no puede huir.',
   },
   {
@@ -42,6 +44,8 @@ export let projects = [
     back1: '',
     back2: '',
     text: '',
+    link: 'https://www.youtube.com/watch?v=VZLZy2ajQGA&t=301s',
+    linkText: 'Youtube',
   },
   {
     name: 'Tu mirada',
@@ -51,7 +55,7 @@ export let projects = [
     poster: '',
     back1: '',
     back2: '',
-    text: '',
+    text: 'El videoclip para la canción "Tu Mirada", de Eterna Inocencia, sigue a un grupo de amigos que está decidido a creer que aún pueden cambiar el mundo, reflejando el espíritu comprometido y rebelde que ha constituído a la banda desde su orígen hasta hoy',
   },
   {
     name: 'Al desnudo',
