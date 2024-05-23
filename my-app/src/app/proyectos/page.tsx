@@ -1,101 +1,77 @@
 'use client';
+import Books from '@/components/Books/Books';
 import Collapsable from '../../components/Collapsable/Collapsable';
 import React from 'react';
+import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import Image from 'next/image';
-import caerseEsPartir from '../../../public/static/images/caerse-es-partir.webp';
-import laCasaYElCementerio from '../../../public/static/images/la_casa.png';
-import pequeñosHeroes from '../../../public/static/images/pequenos-heroes.jpeg';
+import { projects } from '../data/data';
+// import poster from '../../../public/static/images/la_casa.png';
 
 const Proyectos = () => {
-  const redirectToUrl = (url: string) => {
-    window.open(url);
-  };
   return (
     <div className='w100'>
       <div className='main-wrapper'>
-        <div className='column-left'>
-          <h3>candela buttigliero.</h3>
-        </div>
+        <ColumnLeft />
         <div className='main-projects-wrapper'>
           <Collapsable open title='Libros'>
-            <div className='books-wrapper'>
-              <div
-                className='book'
-                onClick={() =>
-                  redirectToUrl(
-                    'https://alcioneditora.com.ar/productos/caerse-es-partir-con-el-cuerpo/'
-                  )
-                }
-              >
-                <div className='content'>
-                  <div className='content-overlay'></div>
-                  <Image
-                    src={caerseEsPartir}
-                    width={300}
-                    alt='Portada del libro Caerse es partir con el cuerpo'
-                  />
-                  <div className='content-details fadeIn-right'>
-                    <h3>Caerse es partir con el cuerpo</h3>
-                    <p>Libro de relatos - Editorial Alción</p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className='book'
-                onClick={() =>
-                  redirectToUrl(
-                    'https://apuleyoediciones.com/producto/la-casa-y-el-cementerio/'
-                  )
-                }
-              >
-                <div className='content'>
-                  <div className='content-overlay'></div>
-                  <Image
-                    src={laCasaYElCementerio}
-                    width={300}
-                    alt='Portada del libro La Casa y el cementerio'
-                  />
-                  <div className='content-details fadeIn-right'>
-                    <h3>La casa y el cementerio</h3>
-                    <p>Cuento infantil - Apuleyo ediciones</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className='book'
-                onClick={() =>
-                  redirectToUrl(
-                    'https://apuleyoediciones.com/producto/la-casa-y-el-cementerio/'
-                  )
-                }
-              >
-                <div className='content'>
-                  <div className='blurry'></div>
-                  <div className='content-overlay blurry'></div>
-                  <Image
-                    src={pequeñosHeroes}
-                    width={300}
-                    alt='Picture of the author'
-                  />
-                  <div className='content-details fadeIn-right'>
-                    <h3>Messi, Pequeños héroes</h3>
-                    <p>Cuento infantil - En proceso</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Books />
           </Collapsable>
           <Collapsable open title='Guion'>
-            Consectetur adipiscing elit pellentesque habitant morbi tristique.
-            Pulvinar pellentesque habitant morbi tristique. Vel quam elementum
-            pulvinar etiam. Pulvinar pellentesque habitant morbi tristique
-            senectus et netus et. Elementum integer enim neque volutpat.
-            Faucibus in ornare quam viverra orci sagittis. Amet volutpat
-            consequat mauris nunc congue nisi vitae suscipit. Dui accumsan sit
-            amet nulla. Proin sagittis nisl rhoncus mattis. Enim nulla aliquet
-            porttitor lacus. Arcu odio ut sem nulla pharetra diam sit amet.
-            Gravida rutrum quisque non tellus orci ac auctor augue
+            <div className='screenwriting-wrapper'>
+              {projects && projects.length
+                ? projects.map((item, index) => (
+                    <div
+                      key={`project__${item.name}--${index}`}
+                      className='screenwriting'
+                    >
+                      <div className='images'>
+                        <Image
+                          src={item.poster}
+                          width={350}
+                          height={200}
+                          alt='Picture of the author'
+                        />
+                        <div className='smaller-screenwriting'>
+                          <Image
+                            src={item.back1}
+                            width={300}
+                            height={200}
+                            alt='Picture of the author'
+                          />
+                          <Image
+                            src={item.back2}
+                            width={300}
+                            height={200}
+                            alt='Picture of the author'
+                          />
+                          <Image
+                            src={item.back3}
+                            width={300}
+                            height={200}
+                            alt='Picture of the author'
+                          />
+                        </div>
+                      </div>
+                      <div className='text'>
+                        <h2>{item.name}</h2>
+                        <p>{item.description}</p>
+                        {item.text ? <h1>Sinopsis</h1> : null}
+                        <p>{item.text}</p>
+                        <br />
+                        {item.link ? (
+                          <div className='link'>
+                            Disponible en
+                            <a href={item.link}>{item.linkText}</a>{' '}
+                            {item.link2 ? (
+                              <a href={item.link2}> y {item.link2Text}</a>
+                            ) : null}
+                          </div>
+                        ) : null}
+                      </div>
+                    </div>
+                  ))
+                : 'No projects found'}
+            </div>
           </Collapsable>
           <Collapsable open title='Proyectos en desarrollo'>
             Consectetur adipiscing elit pellentesque habitant morbi tristique.
