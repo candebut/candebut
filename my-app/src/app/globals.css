@@ -57,6 +57,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    line-height: 29px;
+    margin: 0 2rem;
 
     p {
       transform: rotate(90deg);
@@ -88,10 +90,16 @@ body {
 
 .main-projects-wrapper {
   overflow: scroll;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* width: 100%;
+  display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+
+  .project {
+    width: 100%;
+  }
 }
 
 footer {
@@ -130,15 +138,15 @@ footer {
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 100rem;
   overflow: hidden;
 }
 
 .content .content-overlay {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -191,4 +199,7 @@ footer {
 }
 .fadeIn-right {
   left: 80%;
+}
+.w100 {
+  width: 100%;
 }

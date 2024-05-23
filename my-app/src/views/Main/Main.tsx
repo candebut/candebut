@@ -5,9 +5,15 @@ import React from 'react';
 let projects = [
   {
     name: 'El chofer',
-    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716392013/d7wzivkj1tzsqwfp595a.mp4',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716451272/bg1igrcers6287wihsjx.mp4',
     description:
-      'cortometraje - escrito por Candela Buttigliero, dirigido por Candela Buttigliero y Kike Maíllo',
+      'Cortometraje escrito por Candela Buttigliero, dirigido por Candela Buttigliero y Kike Maíllo',
+  },
+  {
+    name: 'Infinito',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716390662/gtby70fv3gwr5kzmzzyh.mp4',
+    description:
+      'Cortometraje escrito por Candela Buttigliero y dirigido por John Araque & Frank Vera Gimenez',
   },
   {
     name: 'El cuerpo sabe',
@@ -27,14 +33,8 @@ let projects = [
       'Cortometraje escrito por Candela Buttigliero y dirigido por David Moreno',
   },
   {
-    name: 'Infinito',
-    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716390662/gtby70fv3gwr5kzmzzyh.mp4',
-    description:
-      'Cortometraje escrito por Candela Buttigliero y dirigido por John Araque & Frank Vera Gimenez',
-  },
-  {
     name: 'La obra de las máscaras',
-    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370814/bgafagyfcflmvknupvj2.mp4',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716392903/ys0ai3n5bkwdcqbhxfjk.mp4',
     description:
       'Cortometraje escrito por Candela Buttigliero y dirigido por Norman Toledo Rojas',
   },
@@ -61,7 +61,7 @@ const Main = () => {
   };
 
   return (
-    <div>
+    <div className='w100'>
       <div className='main-wrapper'>
         <div className='column-left'>
           <h3>candela buttigliero.</h3>
