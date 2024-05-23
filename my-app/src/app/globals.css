@@ -250,9 +250,10 @@ footer {
 }
 
 .screenwriting {
-  margin-top: 3rem;
+  padding-top: 0 3rem;
   display: flex;
   gap: 0.5rem;
+  border-top: 1px dashed rgb(60, 60, 60);
   .images {
     display: flex;
     flex-direction: row;

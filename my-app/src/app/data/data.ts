@@ -56,6 +56,8 @@ export let projects = [
     back1: '',
     back2: '',
     text: 'El videoclip para la canción "Tu Mirada", de Eterna Inocencia, sigue a un grupo de amigos que está decidido a creer que aún pueden cambiar el mundo, reflejando el espíritu comprometido y rebelde que ha constituído a la banda desde su orígen hasta hoy',
+    link: 'https://www.youtube.com/watch?v=b7urKz7m0Uk',
+    linkText: 'Youtube',
   },
   {
     name: 'Al desnudo',
@@ -65,7 +67,7 @@ export let projects = [
     poster: '',
     back1: '',
     back2: '',
-    text: 'Ángel es adicto al sexo y no es capaz de contárselo a nadie. Luego de perder su matrimonio, comienza una terapia con el objetivo de recuperar su vida. Sus amigos, sospechando que su sospresiva ausencia durante los últimos meses se debe al dolor del divorcio, deciden sacarlo de fiesta y rememorar viejos tiempos. Contratan, para ello, los servicios de Olivia: una jóven prostituta que transita su convivencia con sus propias contradicciones. Mientras cuenta los minutos y una inesperada conexión se construye entre ellos, Ángel batalla contra su deseo y contra su peor enemigo: el temor a ser vulnerable.',
+    text: 'Ángel es adicto al sexo y no es capaz de contárselo a nadie. Luego de perder su matrimonio, comienza terapia con el objetivo de recuperar su vida. Sus amigos, sospechando que su sospresiva ausencia durante los últimos meses se debe al dolor del divorcio, deciden sacarlo de fiesta y rememorar viejos tiempos. Contratan, para ello, los servicios de Olivia: una jóven prostituta que transita su convivencia con sus propias contradicciones. Mientras cuenta los minutos y una inesperada conexión se construye entre ellos, Ángel batalla contra su deseo y contra su peor enemigo: el temor a ser vulnerable.',
   },
   {
     name: 'La obra de las máscaras',
@@ -75,7 +77,7 @@ export let projects = [
     poster: '',
     back1: '',
     back2: '',
-    text: 'Álvaro tiene un problema: todo lo que hace está ensayado. Tras un reencuentro con su ex-novia, Marina, durante el casting para una obra de teatro, se ve obligado a enfrentarse a sí mismo y a una verdad para la que no puede prepararse: en su búsqueda de ser perfecto, ha perdido la capacidad de ser genuino.  ',
+    text: 'Álvaro tiene un problema: todo lo que hace está ensayado. Tras un reencuentro con su ex-novia, Marina, durante un casting, se ve obligado a enfrentarse a una verdad para la que no puede prepararse: en su búsqueda de ser perfecto, ha perdido la capacidad de ser genuino.  ',
   },
   //   {
   //     name: 'Visceral - mood trailer',

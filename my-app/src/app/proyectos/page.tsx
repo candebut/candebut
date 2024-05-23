@@ -72,10 +72,10 @@ const Proyectos = () => {
                             onMouseEnter={startPreview}
                             onMouseLeave={stopPreview}
                           ></video>
-                          <div className='content-details fadeIn-right'>
+                          {/* <div className='content-details fadeIn-right'>
                             <h3>{item.name}</h3>
                             <p>{item.description}</p>
-                          </div>
+                          </div> */}
                         </div>
                       )}
                       <div className='text'>
