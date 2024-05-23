@@ -4,16 +4,17 @@ import { FaChevronUp, FaChevronDown } from 'react-icons/fa6';
 interface IProps {
   open?: boolean;
   title: string;
+  children: React.ReactNode; // Add this line
 }
 
 const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
-  const [isOpen, setIsOpen] = useState();
+  const [isOpen, setIsOpen] = useState(open || false);
   const [height, setHeight] = useState(0);
 
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (isOpen) setHeight(ref.current?.getBoundingClientRect().height);
+    if (isOpen) setHeight(ref.current?.getBoundingClientRect().height ?? 0);
     else setHeight(0);
   }, [isOpen]);
 

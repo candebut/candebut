@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
-const Scripts = ({ projects }) => {
-  const startPreview = (e: any) => {
-    const vid = e.target;
+const Scripts: React.FC<any> = ({ projects }) => {
+  const startPreview = (e: React.MouseEvent<HTMLVideoElement>) => {
+    const vid = e.currentTarget;
     vid.muted = true;
     vid.play();
   };
 
-  const stopPreview = (e: any) => {
-    const vid = e.target;
+  const stopPreview = (e: React.MouseEvent<HTMLVideoElement>) => {
+    const vid = e.currentTarget;
     vid.muted = false;
     vid.currentTime = 0;
     vid.pause();
