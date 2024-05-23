@@ -7,7 +7,14 @@ const ColumnRight = () => {
     <div className='column-right'>
       <p onClick={() => router.push('/proyectos')}>proyectos</p>
       <p onClick={() => router.push('/sobre-mi')}>sobre mi</p>
-      <p onClick={() => router.push('')}>currículum</p>
+      <p>
+        <a
+          href='CV Candela Buttigliero - Guionista y analista de guion.pdf'
+          download='CV Candela Buttigliero - Guionista y analista de guion'
+        >
+          currículum
+        </a>
+      </p>
       <p onClick={() => router.push('/contactame')}>contáctame</p>
       <p onClick={() => router.push('/prensa')}>prensa</p>
     </div>
