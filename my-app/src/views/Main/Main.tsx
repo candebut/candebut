@@ -78,8 +78,6 @@ const Main = () => {
                       <div className='content-overlay'></div>
                       <video
                         src={project.url}
-                        //   className='container'
-                        //   controls
                         onMouseEnter={startPreview}
                         onMouseLeave={stopPreview}
                       ></video>
