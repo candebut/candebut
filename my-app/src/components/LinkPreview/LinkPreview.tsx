@@ -82,7 +82,9 @@ function LinkPreview({ url = '', description = true }) {
     return (
       <p>
         No se pudo cargar la previsualización,{' '}
-        <a href={url}>hace click aquí para acceder a la nota.</a>
+        <a className='url' href={url}>
+          hace click aquí para acceder a la nota.
+        </a>
       </p>
     );
   }
