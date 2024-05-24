@@ -36,7 +36,7 @@ export let projects = [
     back3: infinito_back3,
     text: 'Una mujer despierta en un hospital abandonado e intenta escapar de la única persona que no puede huir.',
     premios:
-      'Sognielettrici International Film, Festival, Electricdreams International Film Festival',
+      'Sognielettrici International Film Festival & Electricdreams International Film Festival',
   },
   {
     name: 'El cuerpo sabe',
@@ -109,5 +109,26 @@ export const wipProjects = [
     linkText: 'Filmin',
     link2: 'https://www.movistarplus.es/cine/el-chofer/ficha?tipo=E&id=3122921',
     link2Text: 'Movistar+',
+  },
+];
+
+export let WIPprojects = [
+  {
+    wip: true,
+    name: 'Visceral',
+    url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370814/bgafagyfcflmvknupvj2.mp4',
+    description:
+      'Drama/coming of age de 6 episodios, creada y escrita por Candela Buttigliero',
+    // images: true,
+    poster:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1716537066/baxx2spzdhonz4rvknda.jpg',
+    // back1: elchofer_back,
+    // back2: elchofer_back2,
+    // back3: elchofer_back3,
+    text: 'Un grupo de amigos atraviesa una crisis cuando uno de ellos es acusado de abuso sexual',
+    // link: 'https://www.filmin.es/corto/el-chofer',
+    // linkText: 'Filmin',
+    // link2: 'https://www.movistarplus.es/cine/el-chofer/ficha?tipo=E&id=3122921',
+    // link2Text: 'Movistar+',
   },
 ];

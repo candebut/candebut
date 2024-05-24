@@ -5,6 +5,7 @@ import Image from 'next/image';
 import cande from '../../../public/static/images/cande.jpeg';
 import Footer from '@/components/Footer/Footer';
 import { useRouter } from 'next/navigation';
+import { isMobile } from '@/utils/utils';
 
 const SobreMi = () => {
   const router = useRouter();
@@ -73,9 +74,14 @@ const SobreMi = () => {
               </a>
             </p>
           </div>
-          <p onClick={() => router.push('mailto:candelabuttigliero@gmail.com')}>
-            candelabuttigliero@gmail.com
-          </p>
+
+          {isMobile ? null : (
+            <p
+              onClick={() => router.push('mailto:candelabuttigliero@gmail.com')}
+            >
+              candelabuttigliero@gmail.com
+            </p>
+          )}
         </div>
         <ColumnRight />
       </div>

@@ -4,6 +4,7 @@ import { projects } from '@/app/data/data';
 import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import ColumnRight from '@/components/ColumnRight/ColumnRight';
 import Footer from '@/components/Footer/Footer';
+import { isMobile } from '@/utils/utils';
 import React from 'react';
 
 const Main = () => {
@@ -32,10 +33,18 @@ const Main = () => {
                     className='project'
                     key={`project__${project.name}-${index}`}
                   >
+                    {/* {isMobile ? (
+                      <div className='mobile-titles'>
+                        <h3>{project.name}</h3>
+                        <p>{project.description}</p>
+                        <a className='muestra'>Ver más</a>
+                      </div>
+                    ) : null} */}
                     <div className='content'>
                       <div className='content-overlay'></div>
                       <video
                         src={project.url}
+                        // controls={isMobile}
                         onMouseEnter={startPreview}
                         onMouseLeave={stopPreview}
                       ></video>

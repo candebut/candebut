@@ -1,3 +1,4 @@
+import { isMobile } from '@/utils/utils';
 import Image from 'next/image';
 
 const Scripts: React.FC<any> = ({ projects }) => {
@@ -25,6 +26,7 @@ const Scripts: React.FC<any> = ({ projects }) => {
               <div className='content'>
                 <video
                   src={item.url}
+                  controls={isMobile}
                   onMouseEnter={startPreview}
                   onMouseLeave={stopPreview}
                 ></video>
@@ -35,7 +37,6 @@ const Scripts: React.FC<any> = ({ projects }) => {
                 <p>{item.description}</p>
                 {item.text ? <h1>Sinopsis</h1> : null}
                 <p>{item.text}</p>
-                <br />
                 {item.link ? (
                   <div className='link'>
                     Disponible en
@@ -45,6 +46,7 @@ const Scripts: React.FC<any> = ({ projects }) => {
                     ) : null}
                   </div>
                 ) : null}
+                {item.premios ? <p>Seleccionado para {item.premios}</p> : null}
               </div>
             </div>
           ))

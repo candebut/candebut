@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -314,5 +314,39 @@ footer {
   }
   p {
     height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .column-left {
+    width: 13%;
+  }
+  .column-right {
+    width: 13%;
+    margin: 0 !important;
+  }
+  .screenwriting {
+    flex-direction: column-reverse;
+    .text {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+  .main-wrapper {
+    overflow: hidden;
+  }
+  .sobre-mi-wrapper {
+    > div {
+      flex-direction: column;
+      overflow: scroll;
+    }
+  }
+  footer {
+    padding: 0px 1rem;
+  }
+
+  .abort-turn {
+    width: 100%;
+    padding: 0px 0 12px 0;
   }
 }
