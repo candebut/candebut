@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
-  const [isOpen, setIsOpen] = useState(open || false);
+  const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(0);
 
   const ref = useRef<HTMLDivElement>(null);
