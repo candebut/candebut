@@ -26,7 +26,7 @@ const Scripts: React.FC<any> = ({ projects }) => {
               <div className='content'>
                 <video
                   src={item.url}
-                  controls={isMobile()}
+                  poster={item.supportImg}
                   onMouseEnter={startPreview}
                   onMouseLeave={stopPreview}
                   loop
