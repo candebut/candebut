@@ -322,9 +322,10 @@ footer {
   flex-wrap: wrap;
   padding: 1rem;
   gap: 1rem;
+  justify-content: center;
 }
 .card-wrapper {
-  width: 25rem;
+  width: 18rem;
   background-color: white;
   color: black;
   border-radius: 12px;
