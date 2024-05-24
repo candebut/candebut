@@ -37,9 +37,11 @@ const Main = () => {
                       <div className='content-overlay'></div>
                       <video
                         src={project.url}
+                        poster={project.supportImg}
                         // controls={isMobile}
                         onMouseEnter={startPreview}
                         onMouseLeave={stopPreview}
+                        loop
                       ></video>
                       <div className='content-details fadeIn-right'>
                         <h3>{project.name}</h3>

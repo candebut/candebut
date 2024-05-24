@@ -23,6 +23,8 @@ export let projects = [
     linkText: 'Filmin',
     link2: 'https://www.movistarplus.es/cine/el-chofer/ficha?tipo=E&id=3122921',
     link2Text: 'Movistar+',
+    supportImg:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1716549090/cbhv4xbgoew9kccmrnkw.jpg',
   },
   {
     name: 'Infinito',
@@ -37,6 +39,8 @@ export let projects = [
     text: 'Una mujer despierta en un hospital abandonado e intenta escapar de la única persona que no puede huir.',
     premios:
       'Sognielettrici International Film Festival & Electricdreams International Film Festival',
+    supportImg:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1716549127/znbb2erk0nb1wqljlhej.jpg',
   },
   {
     name: 'El cuerpo sabe',
@@ -48,6 +52,8 @@ export let projects = [
     text: '',
     link: 'https://www.youtube.com/watch?v=VZLZy2ajQGA&t=301s',
     linkText: 'Youtube',
+    supportImg:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1716549529/hmfkemwlcjsjezp8ni33.png',
   },
   {
     name: 'Tu mirada',
@@ -60,6 +66,8 @@ export let projects = [
     text: 'El videoclip para la canción "Tu Mirada", de Eterna Inocencia, sigue a un grupo de amigos que está decidido a creer que aún pueden cambiar el mundo, reflejando el espíritu comprometido y rebelde que ha constituído a la banda desde su orígen hasta hoy',
     link: 'https://www.youtube.com/watch?v=b7urKz7m0Uk',
     linkText: 'Youtube',
+    supportImg:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1716549347/u437neqfp14prhcwou89.png',
   },
   {
     name: 'Al desnudo',
@@ -70,6 +78,8 @@ export let projects = [
     back1: '',
     back2: '',
     text: 'Ángel es adicto al sexo y no es capaz de contárselo a nadie. Luego de perder su matrimonio, comienza terapia con el objetivo de recuperar su vida. Sus amigos, sospechando que su sospresiva ausencia durante los últimos meses se debe al dolor del divorcio, deciden sacarlo de fiesta y rememorar viejos tiempos. Contratan, para ello, los servicios de Olivia: una jóven prostituta que transita su convivencia con sus propias contradicciones. Mientras cuenta los minutos y una inesperada conexión se construye entre ellos, Ángel batalla contra su deseo y contra su peor enemigo: el temor a ser vulnerable.',
+    supportImg:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1716549587/c6lm0qpaqhbcb0sdmzra.png',
   },
   {
     name: 'La obra de las máscaras',
@@ -79,7 +89,9 @@ export let projects = [
     poster: '',
     back1: '',
     back2: '',
-    text: 'Álvaro tiene un problema: todo lo que hace está ensayado. Tras un reencuentro con su ex-novia, Marina, durante un casting, se ve obligado a enfrentarse a una verdad para la que no puede prepararse: en su búsqueda de ser perfecto, ha perdido la capacidad de ser genuino.  ',
+    text: 'Álvaro tiene un problema: todo lo que hace está ensayado. Tras un reencuentro con su ex-novia, Marina, durante un casting, se ve obligado a enfrentarse a una verdad para la que no puede prepararse: en su búsqueda de ser perfecto, ha perdido la capacidad de ser genuino.',
+    supportImg:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1716549444/tx5f8cipfdhijjpzqovh.png',
   },
   //   {
   //     name: 'Visceral - mood trailer',

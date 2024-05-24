@@ -29,6 +29,7 @@ const Scripts: React.FC<any> = ({ projects }) => {
                   controls={isMobile()}
                   onMouseEnter={startPreview}
                   onMouseLeave={stopPreview}
+                  loop
                 ></video>
               </div>
 
