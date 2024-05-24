@@ -6,6 +6,7 @@ import ColumnRight from '@/components/ColumnRight/ColumnRight';
 import Footer from '@/components/Footer/Footer';
 import { isMobile } from '@/utils/utils';
 import React from 'react';
+import { FaChevronDown } from 'react-icons/fa6';
 
 const Main = () => {
   const startPreview = (e: any) => {
@@ -60,6 +61,11 @@ const Main = () => {
         </div>
         <ColumnRight />
       </div>
+      <div className='arrow-icon'>
+        {' '}
+        <FaChevronDown />
+      </div>
+
       <Footer />
     </div>
   );

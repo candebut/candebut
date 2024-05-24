@@ -51,9 +51,9 @@ const SobreMi = () => {
                 <a href='https://www.casadellibro.com/libro-la-casa-y-el-cementerio/9788419648983/14348316'>
                   {' '}
                   La casa y el cementerio{' '}
-                </a>{' '}
-                Egresada del Máster, trabajé como{' '}
-                <b>guionista y analista de guion</b>
+                </a>
+                . Egresada del Máster, trabajé como{' '}
+                <b>guionista y analista de guion </b>
                 en{' '}
                 <a href='https://arenacollective.com.ar/'>Arena Collective</a> y
                 en Agosto del 2023 gané el concurso <b>Audi Future Stories</b>{' '}
