@@ -5,7 +5,11 @@ import laCasaYElCementerio from '../../../public/static/images/la_casa.png';
 import pequeñosHeroes from '../../../public/static/images/pequenos-heroes.jpeg';
 
 const redirectToUrl = (url: string) => {
-  window.open(url);
+  if (typeof window !== 'undefined') {
+    window.open(url, '_blank');
+  } else {
+    console.error('Window is not defined');
+  }
 };
 
 const Books = () => {

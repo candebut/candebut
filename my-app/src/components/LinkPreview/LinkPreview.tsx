@@ -1,8 +1,21 @@
 'use client';
 import { useState, useEffect } from 'react';
 
+interface YouTubePreviewData {
+  videoId: string;
+  videoThumbnail: string;
+}
+
+interface GenericPreviewData {
+  title: string;
+  description: string;
+  image: string;
+}
+
+type PreviewData = YouTubePreviewData | GenericPreviewData;
+
 function LinkPreview({ url = '', description = true }) {
-  const [previewData, setPreviewData] = useState(null);
+  const [previewData, setPreviewData] = useState<PreviewData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -19,7 +32,7 @@ function LinkPreview({ url = '', description = true }) {
           setPreviewData({
             videoId,
             videoThumbnail,
-          });
+          } as YouTubePreviewData);
           setLoading(false);
         } else {
           const parser = new DOMParser();
@@ -38,7 +51,7 @@ function LinkPreview({ url = '', description = true }) {
             title,
             description,
             image,
-          });
+          } as GenericPreviewData);
           setLoading(false);
         }
       } catch (error) {
@@ -73,7 +86,7 @@ function LinkPreview({ url = '', description = true }) {
     window.open(url, '_blank');
   };
 
-  if (previewData.videoId) {
+  if ('videoId' in previewData) {
     return (
       <div onClick={handleClick} style={{ cursor: 'pointer' }}>
         <img src={previewData.videoThumbnail} alt='Video Thumbnail' />

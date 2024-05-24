@@ -4,7 +4,6 @@ import { projects } from '@/app/data/data';
 import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import ColumnRight from '@/components/ColumnRight/ColumnRight';
 import Footer from '@/components/Footer/Footer';
-import { isMobile } from '@/utils/utils';
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa6';
 

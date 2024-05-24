@@ -75,7 +75,7 @@ const SobreMi = () => {
             </p>
           </div>
 
-          {isMobile ? null : (
+          {isMobile() ? null : (
             <p
               onClick={() => router.push('mailto:candelabuttigliero@gmail.com')}
             >
