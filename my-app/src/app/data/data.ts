@@ -13,7 +13,7 @@ export let projects = [
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716451272/bg1igrcers6287wihsjx.mp4',
     description:
       'Cortometraje escrito por Candela Buttigliero, dirigido por Candela Buttigliero y Kike Maíllo',
-    images: true,
+    // images: true,
     poster: elchofer_poster,
     back1: elchofer_back,
     back2: elchofer_back2,
@@ -29,7 +29,7 @@ export let projects = [
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716390662/gtby70fv3gwr5kzmzzyh.mp4',
     description:
       'Cortometraje escrito por Candela Buttigliero y dirigido por John Araque & Frank Vera Gimenez',
-    images: true,
+    // images: true,
     poster: infinito_poster,
     back1: infinito_back,
     back2: infinito_back2,
