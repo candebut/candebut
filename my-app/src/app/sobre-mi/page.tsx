@@ -23,52 +23,16 @@ const SobreMi = () => {
             />
             <div className='text'>
               <p>
-                Nací en Rosario, Argentina, en 1993. Mientras estudiaba{' '}
-                <b>Ciencias de la Comunicación</b> en la Universidad de Buenos
-                Aires (y cualquier carrera que me permitiera posponer el hecho
-                de que lo que amaba era escribir), estudié guión con{' '}
-                <b>Jorge Maestro, Pablo Culell y Ramiro San Honorio</b> y
-                comencé a escribir cortometrajes y a trabajar como fotógrafa. En
-                2021 me mudé a<b> Barcelona</b> y continué mis estudios con{' '}
-                <b>Josan Hartero</b>. En 2022 gané el concurso{' '}
-                <a href='https://about.netflix.com/en/news/introducing-the-netflix-created-by-initiative'>
-                  {' '}
-                  Creative Equity de Netflix
-                </a>{' '}
-                , que me permitió estudiar el{' '}
-                <b>
-                  Master de Guion Cinematográfico en{' '}
-                  <a href='https://escac.com/'>ESCAC</a>
-                </b>
-                . Allí, escribí múltiples cortometrajes, colaborando con jóvenes
-                directores y productores y trabajando, a la vez, como analista
-                de guion. Publiqué dos libros:{' '}
-                <a href='https://alcioneditora.com.ar/productos/caerse-es-partir-con-el-cuerpo/'>
-                  {' '}
-                  Caerse es partir con el cuerpo{' '}
-                </a>{' '}
-                y{' '}
-                <a href='https://www.casadellibro.com/libro-la-casa-y-el-cementerio/9788419648983/14348316'>
-                  {' '}
-                  La casa y el cementerio{' '}
-                </a>
-                . Egresada del Máster, trabajé como{' '}
-                <b>guionista y analista de guion </b>
-                en{' '}
-                <a href='https://arenacollective.com.ar/'>Arena Collective</a> y
-                en Agosto del 2023 gané el concurso <b>Audi Future Stories</b>{' '}
-                con <i>El Chofer</i>, un guion que escribí y luego{' '}
-                <b>dirigí junto a Kike Maíllo</b> y fue estrenado en el{' '}
-                <b>Festival Internacional de Cine de San Sebastián</b>.
-              </p>
+                Guionista y analista de guion especializada en desarrollo de cine y series. Beca Netflix – Creative Equity 2022 para el Máster de Guion en ESCAC. Trabajo con una voz autoral sólida y sensibilidad narrativa, integrando perspectiva DEI desde la fase de escritura. Mi experiencia incluye mesas de guionistas, desarrollo de pitch decks, script doctoring y análisis narrativo para productoras en España y Latinoamérica. He trabajado con ONZA, Magma Cine, Indómita TV y Arena Collective y con operadoras como Warner, TNT y HBO Max. Fundadora de Diversidad en el Cine y analista voluntaria para el Observatorio de Diversidad Audiovisual de España.
+               </p>
             </div>
           </div>
           <div className='column-right abort-turn prensa'>
             <p onClick={() => router.push('/prensa')}>prensa</p>
             <p>
               <a
-                href='CV Candela Buttigliero - Guionista y analista de guion.pdf'
-                download='CV Candela Buttigliero - Guionista y analista de guion'
+                href='Candela Buttigliero - CV.pdf'
+                download='Candela Buttigliero - CV'
               >
                 currículum
               </a>

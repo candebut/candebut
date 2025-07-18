@@ -8,6 +8,32 @@ import infinito_back2 from '../../../public/static/images/infinito_back2.jpg';
 import infinito_back3 from '../../../public/static/images/infinito_back3.jpg';
 
 export let projects = [
+    {
+    name: 'Visceral',
+    url: 'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/Visceral_-_Portada-page-001_n31doi.jpg',
+    description:
+      'Serie de ficcion en etapa de preproduccion, creada y escrita por Candela Buttigliero. Ganadora del concurso Series INCAA 2024.',
+    poster: elchofer_poster,
+    back1: elchofer_back,
+    back2: elchofer_back2,
+    back3: elchofer_back3,
+    text: 'Un grupo de amigos atraviesa una crisis cuando uno de ellos es acusado en redes por abuso sexual',
+    supportImg: 'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/Visceral_-_Portada-page-001_n31doi.jpg',
+  },
+    {
+    name: 'Crateres',
+    url: 'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/IBERSERIES_Crateres-1-page-001_ljrv11.jpg',
+    description:
+      'Largometraje en desarrollo, creado y escrito por Candela Buttigliero.',
+    poster: elchofer_poster,
+    back1: elchofer_back,
+    back2: elchofer_back2,
+    back3: elchofer_back3,
+    text: 'Cuando el sistema falla y las respuestas no llegan, el odio se disfraza de solución. En una ciudad agrietada, distintos personajes buscan sentido, sin saber que sus heridas son el mejor terreno para que crezca el extremismo.',
+    supportImg:
+      'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/IBERSERIES_Crateres-1-page-001_ljrv11.jpg',
+  },
+
   {
     name: 'El chofer',
     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716451272/bg1igrcers6287wihsjx.mp4',

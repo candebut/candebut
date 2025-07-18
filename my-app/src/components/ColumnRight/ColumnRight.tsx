@@ -10,8 +10,8 @@ const ColumnRight = () => {
       <p onClick={() => router.push('/sobre-mi')}>sobre mi</p>
       <p>
         <a
-          href='CV Candela Buttigliero - Guionista y analista de guion.pdf'
-          download='CV Candela Buttigliero - Guionista y analista de guion'
+          href='Candela Buttigliero - CV.pdf'
+          download='Candela Buttigliero - CV'
         >
           currículum
         </a>

@@ -14,11 +14,11 @@ const Proyectos = () => {
       <div className='main-wrapper'>
         <ColumnLeft />
         <div className='main-projects-wrapper'>
-          <Collapsable open title='Libros'>
-            <Books />
-          </Collapsable>
           <Collapsable open title='Guion'>
             <Scripts projects={projects} />
+          </Collapsable>
+          <Collapsable open title='Libros'>
+            <Books />
           </Collapsable>
           {/* <Collapsable open title='Proyectos en desarrollo'>
             <Scripts />
