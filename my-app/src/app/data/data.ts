@@ -19,6 +19,8 @@ export let projects = [
     back3: elchofer_back3,
     text: 'Un grupo de amigos atraviesa una crisis cuando uno de ellos es acusado en redes por abuso sexual',
     supportImg: 'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/Visceral_-_Portada-page-001_n31doi.jpg',
+    id: 'visceral',
+    recorrido: 'Visceral comenzó su recorrido en la selección del Filmmarket Latam Hublist 2023, donde accedió a encuentros destinados a desarrollar su guion, pitch y materiales de venta. Fue reconocido por su enfoque contemporáneo en el festival Seriesland, tras haber sido destacado en el concurso Series Concept 2023, gracias a una narrativa inmersiva que integra redes sociales como TikTok en la investigación de una denuncia viral de abuso sexual, involucrando activamente al espectador. Esta propuesta, que combina tecnología, interacción y temáticas sociales relevantes, también fue seleccionada en el Laboratorio Digificc 2023. En 2024, continuó su crecimiento  con su participación en el ciclo de tutorías de Showrunners en Barcelona y en el prestigioso LATAM Series Market de Ventana Sur, donde fortaleció su estrategia de venta a través de un Taller de Pitch. Ese mismo año fue adquirido por Magma Cine y, más tarde, por la productora española Onza, en un contrato de coproducción. En 2025, Visceral resultó ganador del concurso de Series del INCAA, consolidando su proyección nacional e internacional. Actualmente, el proyecto se encuentra en fase de preproducción.',
   },
     {
     name: 'Crateres',
@@ -32,6 +34,7 @@ export let projects = [
     text: 'Cuando el sistema falla y las respuestas no llegan, el odio se disfraza de solución. En una ciudad agrietada, distintos personajes buscan sentido, sin saber que sus heridas son el mejor terreno para que crezca el extremismo.',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/IBERSERIES_Crateres-1-page-001_ljrv11.jpg',
+    id: 'crateres',
   },
 
   {
@@ -51,6 +54,7 @@ export let projects = [
     link2Text: 'Movistar+',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549090/cbhv4xbgoew9kccmrnkw.jpg',
+      id: 'el-chofer'
   },
   {
     name: 'Infinito',
@@ -67,6 +71,7 @@ export let projects = [
       'Sognielettrici International Film Festival & Electricdreams International Film Festival',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549127/znbb2erk0nb1wqljlhej.jpg',
+      id: 'infinito'
   },
   {
     name: 'El cuerpo sabe',
@@ -80,6 +85,7 @@ export let projects = [
     linkText: 'Youtube',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549529/hmfkemwlcjsjezp8ni33.png',
+      id: 'el-cuerpo-sabe'
   },
   {
     name: 'Tu mirada',
@@ -94,6 +100,7 @@ export let projects = [
     linkText: 'Youtube',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549347/u437neqfp14prhcwou89.png',
+      id: 'tu-mirada'
   },
   {
     name: 'Al desnudo',
@@ -106,6 +113,7 @@ export let projects = [
     text: 'Ángel es adicto al sexo y no es capaz de contárselo a nadie. Luego de perder su matrimonio, comienza terapia con el objetivo de recuperar su vida. Sus amigos, sospechando que su sospresiva ausencia durante los últimos meses se debe al dolor del divorcio, deciden sacarlo de fiesta y rememorar viejos tiempos. Contratan, para ello, los servicios de Olivia: una jóven prostituta que transita su convivencia con sus propias contradicciones. Mientras cuenta los minutos y una inesperada conexión se construye entre ellos, Ángel batalla contra su deseo y contra su peor enemigo: el temor a ser vulnerable.',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549587/c6lm0qpaqhbcb0sdmzra.png',
+      id: 'al-desnudo'
   },
   {
     name: 'La obra de las máscaras',
@@ -118,6 +126,7 @@ export let projects = [
     text: 'Álvaro tiene un problema: todo lo que hace está ensayado. Tras un reencuentro con su ex-novia, Marina, durante un casting, se ve obligado a enfrentarse a una verdad para la que no puede prepararse: en su búsqueda de ser perfecto, ha perdido la capacidad de ser genuino.',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549444/tx5f8cipfdhijjpzqovh.png',
+      id: 'la-obra-de-las-mascaras'
   },
   //   {
   //     name: 'Visceral - mood trailer',

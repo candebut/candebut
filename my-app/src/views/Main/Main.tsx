@@ -4,10 +4,12 @@ import { projects } from '@/app/data/data';
 import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import ColumnRight from '@/components/ColumnRight/ColumnRight';
 import Footer from '@/components/Footer/Footer';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa6';
 
 const Main = () => {
+  const router = useRouter();
   const startPreview = (e: any) => {
     const vid = e.target;
     vid.muted = true;
@@ -32,13 +34,13 @@ const Main = () => {
                   <div
                     className='project'
                     key={`project__${project.name}-${index}`}
+                    onClick={() => router.push(`/proyectos/${project.id}`)}
                   >
                     <div className='content'>
                       <div className='content-overlay'></div>
                       <video
                         src={project.url}
                         poster={project.supportImg}
-                        // controls={isMobile}
                         onMouseEnter={startPreview}
                         onMouseLeave={stopPreview}
                         loop
