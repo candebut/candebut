@@ -33,7 +33,7 @@ export default function ProjectClient({ project }: Props) {
         <div className='project-page'>
           <div className='content'>
             <h2 className='project-name'>{project.name}</h2>
-            <p>{project.description}</p>
+            <p className='project-description'><i>{project.description}</i></p>
 
             {project.text ? (
                 <div className='project-logline'>
@@ -43,7 +43,7 @@ export default function ProjectClient({ project }: Props) {
                 Recorrido del proyecto
                 <p>{project.recorrido}</p></div>) : null}
                     
-            <ContactButton project={project} />
+            {project.estado !== 'estrenado' ? <ContactButton project={project} /> : null}
           </div>
         </div>
         <ColumnRight />

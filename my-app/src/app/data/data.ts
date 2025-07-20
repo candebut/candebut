@@ -21,6 +21,7 @@ export let projects = [
     supportImg: 'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/Visceral_-_Portada-page-001_n31doi.jpg',
     id: 'visceral',
     recorrido: 'Visceral comenzó su recorrido en la selección del Filmmarket Latam Hublist 2023, donde accedió a encuentros destinados a desarrollar su guion, pitch y materiales de venta. Fue reconocido por su enfoque contemporáneo en el festival Seriesland, tras haber sido destacado en el concurso Series Concept 2023, gracias a una narrativa inmersiva que integra redes sociales como TikTok en la investigación de una denuncia viral de abuso sexual, involucrando activamente al espectador. Esta propuesta, que combina tecnología, interacción y temáticas sociales relevantes, también fue seleccionada en el Laboratorio Digificc 2023. En 2024, continuó su crecimiento  con su participación en el ciclo de tutorías de Showrunners en Barcelona y en el prestigioso LATAM Series Market de Ventana Sur, donde fortaleció su estrategia de venta a través de un Taller de Pitch. Ese mismo año fue adquirido por Magma Cine y, más tarde, por la productora española Onza, en un contrato de coproducción. En 2025, Visceral resultó ganador del concurso de Series del INCAA, consolidando su proyección nacional e internacional. Actualmente, el proyecto se encuentra en fase de preproducción.',
+    estado: 'preproduccion'
   },
     {
     name: 'Crateres',
@@ -35,6 +36,7 @@ export let projects = [
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1752826593/IBERSERIES_Crateres-1-page-001_ljrv11.jpg',
     id: 'crateres',
+    estado: 'desarrollo'
   },
 
   {
@@ -52,9 +54,11 @@ export let projects = [
     linkText: 'Filmin',
     link2: 'https://www.movistarplus.es/cine/el-chofer/ficha?tipo=E&id=3122921',
     link2Text: 'Movistar+',
+    recorrido: 'Guion ganador del concurso Audi Future Stories. "El Chofer" fue dirigido por Candela Buttigliero y Kike Maillo y tuvo su estreno en el Festival Internacional de Cine de San Sebastián y una posterior participacion en el BCN Film Festival. Actualmente, se encuentra disponible en Filmin y Movistar+.',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549090/cbhv4xbgoew9kccmrnkw.jpg',
-      id: 'el-chofer'
+    id: 'el-chofer',
+    estado: 'estrenado',
   },
   {
     name: 'Infinito',
@@ -67,11 +71,13 @@ export let projects = [
     back2: infinito_back2,
     back3: infinito_back3,
     text: 'Una mujer despierta en un hospital abandonado e intenta escapar de la única persona que no puede huir.',
+    recorrido: 'El cortometraje Infinito ha sido seleccionado para el festival Sognielettrici International Film Festival y el Electricdreams International Film Festival.',
     premios:
       'Sognielettrici International Film Festival & Electricdreams International Film Festival',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549127/znbb2erk0nb1wqljlhej.jpg',
-      id: 'infinito'
+      id: 'infinito',
+          estado: 'estrenado',
   },
   {
     name: 'El cuerpo sabe',
@@ -80,12 +86,14 @@ export let projects = [
     poster: '',
     back1: '',
     back2: '',
-    text: '',
+    text: 'Franco siempre creyó que vivía su sexualidad con libertad. Pero había gestos que aún censuraba: el vaivén de sus caderas al caminar, el impulso de bailar sin medir miradas, la entrega sin cálculo. Todo eso cambió cuando conoció a Latina Turner, su alter ego drag. Bajo la protección del maquillaje y las luces, Franco se permitió hacer lo que antes callaba en su cuerpo. Y algo extraordinario ocurrió: lo que fue un juego escénico se volvió verdad encarnada. Porque cuando el cuerpo se suelta, aprende. Y ese aprendizaje no se desaprende. Hay una sabiduría que nace del movimiento, del goce, de la expresión. Una verdad que no se piensa, se habita.',
+    recorrido: 'El cortometraje documental El Cuerpo Sabe ha sido ganador del festival de Cine de No Violencias 2024.',
     link: 'https://www.youtube.com/watch?v=VZLZy2ajQGA&t=301s',
     linkText: 'Youtube',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549529/hmfkemwlcjsjezp8ni33.png',
-      id: 'el-cuerpo-sabe'
+      id: 'el-cuerpo-sabe',
+          estado: 'estrenado',
   },
   {
     name: 'Tu mirada',
@@ -100,7 +108,8 @@ export let projects = [
     linkText: 'Youtube',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549347/u437neqfp14prhcwou89.png',
-      id: 'tu-mirada'
+      id: 'tu-mirada',
+          estado: 'estrenado',
   },
   {
     name: 'Al desnudo',
@@ -113,7 +122,8 @@ export let projects = [
     text: 'Ángel es adicto al sexo y no es capaz de contárselo a nadie. Luego de perder su matrimonio, comienza terapia con el objetivo de recuperar su vida. Sus amigos, sospechando que su sospresiva ausencia durante los últimos meses se debe al dolor del divorcio, deciden sacarlo de fiesta y rememorar viejos tiempos. Contratan, para ello, los servicios de Olivia: una jóven prostituta que transita su convivencia con sus propias contradicciones. Mientras cuenta los minutos y una inesperada conexión se construye entre ellos, Ángel batalla contra su deseo y contra su peor enemigo: el temor a ser vulnerable.',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549587/c6lm0qpaqhbcb0sdmzra.png',
-      id: 'al-desnudo'
+      id: 'al-desnudo',
+          estado: 'estrenado',
   },
   {
     name: 'La obra de las máscaras',
@@ -126,7 +136,8 @@ export let projects = [
     text: 'Álvaro tiene un problema: todo lo que hace está ensayado. Tras un reencuentro con su ex-novia, Marina, durante un casting, se ve obligado a enfrentarse a una verdad para la que no puede prepararse: en su búsqueda de ser perfecto, ha perdido la capacidad de ser genuino.',
     supportImg:
       'https://res.cloudinary.com/daowfatkx/image/upload/v1716549444/tx5f8cipfdhijjpzqovh.png',
-      id: 'la-obra-de-las-mascaras'
+      id: 'la-obra-de-las-mascaras',
+          estado: 'estrenado',
   },
   //   {
   //     name: 'Visceral - mood trailer',
