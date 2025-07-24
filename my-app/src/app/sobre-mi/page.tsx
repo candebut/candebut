@@ -23,7 +23,9 @@ const SobreMi = () => {
             />
             <div className='text'>
               <p>
-                Guionista y analista de guion especializada en desarrollo de cine y series. Beca Netflix – Creative Equity 2022 para el Máster de Guion en ESCAC. Trabajo con una voz autoral sólida y sensibilidad narrativa, integrando perspectiva DEI desde la fase de escritura. Mi experiencia incluye mesas de guionistas, desarrollo de pitch decks, script doctoring y análisis narrativo para productoras en España y Latinoamérica. He trabajado con ONZA, Magma Cine, Indómita TV y Arena Collective y con operadoras como Warner, TNT y HBO Max. Fundadora de Diversidad en el Cine y analista voluntaria para el Observatorio de Diversidad Audiovisual de España.
+                Guionista y analista de guion especializada en desarrollo de cine y series.</br>
+                <b>Beca Netflix – Creative Equity 2022</b> para el Máster de Guion en la <b>Escola de Cinema de Catalunya (ESCAC)</b>, ganadora del concurso <b>Audi Future Stories 2023</b> y del concurso de <b>Series Cortas del INCAA 2024</b>. <br/>
+                Trabajo con una voz autoral sólida y sensibilidad narrativa, integrando perspectiva DEI desde la fase de escritura. Mi experiencia incluye mesas de guionistas, desarrollo de pitch decks, script doctoring y análisis narrativo para productoras en España y Latinoamérica. He trabajado con ONZA, Magma Cine, Indómita TV y Arena Collective y con operadoras como Warner, TNT y HBO Max. Fundadora de Diversidad en el Cine y analista voluntaria para el Observatorio de Diversidad Audiovisual de España.
                </p>
             </div>
           </div>
