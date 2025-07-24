@@ -359,6 +359,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-direction: row;
+    .text {
+      display: flex;
+      flex-direction: column;
+    }
   }
   a {
     color: hsla(196, 55%, 68%, 0.75);
