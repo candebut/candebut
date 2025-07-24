@@ -9,6 +9,9 @@ import ContactButton from './PopupButton';
 
 type Props = {
   project: {
+    estado: string;
+    recorrido: any;
+    text: any;
     id: string;
     name: string;
     description: string;
