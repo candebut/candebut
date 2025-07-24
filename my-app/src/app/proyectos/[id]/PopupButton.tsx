@@ -1,13 +1,6 @@
 'use client';
 
-interface Project {
-  name: string;
-  // add other properties if needed
-}
-
-interface ContactButtonProps {
-  project: Project;
-}
+import { ContactButtonProps } from "@/types/types";
 
 export default function ContactButton({ project }: ContactButtonProps) {
   const handleClick = () => {

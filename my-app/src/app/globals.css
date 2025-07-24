@@ -75,7 +75,7 @@ body {
       background-color: hsla(196, 61%, 58%, 0.75);
       position: absolute;
       left: 0;
-      bottom: 3px;
+      bottom: 0.18rem;
       width: 100%;
       height: 4px;
       z-index: -1;
@@ -93,7 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   max-width: 100%;
   overflow-y: auto;
     padding: 1rem;
@@ -139,7 +139,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   background-color: hsla(196, 61%, 58%, 0.75);
   color: white;
   font-weight: bold;
@@ -154,12 +154,6 @@ body {
 
 .main-projects-wrapper {
   overflow: scroll;
-  /* width: 100%;
-  display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: column; */
 
   .project {
     width: 100%;
@@ -175,9 +169,9 @@ footer {
   div {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.6rem;
     color: rgb(107, 141, 224);
-    gap: 20px;
+    gap: 1.25rem;
     a {
       text-decoration: underline;
       font-size: 16px;
@@ -346,7 +340,7 @@ footer {
   .link {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 0.31rem;
     a {
       color: hsla(196, 55%, 68%, 0.75);
     }
@@ -375,7 +369,7 @@ footer {
     color: white !important;
   }
   p {
-    height: 80px;
+    height: 5rem;
   }
 }
 

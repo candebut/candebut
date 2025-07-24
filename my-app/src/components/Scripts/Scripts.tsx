@@ -1,6 +1,3 @@
-import { isMobile } from '@/utils/utils';
-import Image from 'next/image';
-
 const Scripts: React.FC<any> = ({ projects }) => {
   const startPreview = (e: React.MouseEvent<HTMLVideoElement>) => {
     const vid = e.currentTarget;

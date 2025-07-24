@@ -6,21 +6,9 @@ import Footer from '@/components/Footer/Footer';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import ContactButton from './PopupButton';
+import { ProjectClientProps } from '@/types/types';
 
-type Props = {
-  project: {
-    estado: string;
-    recorrido: any;
-    text: any;
-    id: string;
-    name: string;
-    description: string;
-    url: string;
-    supportImg: string;
-  } | undefined;
-};
-
-export default function ProjectClient({ project }: Props) {
+export default function ProjectClient({ project }: ProjectClientProps) {
   const router = useRouter();
 
   useEffect(() => {

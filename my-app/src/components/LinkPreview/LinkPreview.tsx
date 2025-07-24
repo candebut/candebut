@@ -1,18 +1,6 @@
 'use client';
+import { GenericPreviewData, PreviewData, YouTubePreviewData } from '@/types/types';
 import { useState, useEffect } from 'react';
-
-interface YouTubePreviewData {
-  videoId: string;
-  videoThumbnail: string;
-}
-
-interface GenericPreviewData {
-  title: string;
-  description: string;
-  image: string;
-}
-
-type PreviewData = YouTubePreviewData | GenericPreviewData;
 
 function LinkPreview({ url = '', description = true }) {
   const [previewData, setPreviewData] = useState<PreviewData | null>(null);

@@ -139,16 +139,6 @@ export let projects = [
       id: 'la-obra-de-las-mascaras',
           estado: 'estrenado',
   },
-  //   {
-  //     name: 'Visceral - mood trailer',
-  //     url: 'https://res.cloudinary.com/daowfatkx/video/upload/v1716370814/bgafagyfcflmvknupvj2.mp4',
-  //     description:
-  //       'Mood trailer para la serie "Visceral", creada y escrita por Candela Buttigliero',
-  //     poster: '',
-  //     back1: '',
-  //     back2: '',
-  //     text: '',
-  //   },
 ];
 
 export const wipProjects = [
