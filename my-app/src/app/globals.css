@@ -157,6 +157,7 @@ body {
 
   .project {
     width: 100%;
+      cursor: pointer;
   }
 }
 
@@ -213,6 +214,7 @@ footer {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
 }
 
 .blurry {
