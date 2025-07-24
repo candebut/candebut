@@ -1,8 +1,8 @@
 'use client';
 
-import { ContactButtonProps } from "@/types/types";
+import { ProjectClientProps } from "@/types/types";
 
-export default function ContactButton({ project }: ContactButtonProps) {
+export default function ContactButton(project: ProjectClientProps) {
   const handleClick = () => {
     const subject = encodeURIComponent(`Solicitud de dossier de venta para ${project.name}`);
     const email = 'candelabuttigliero@gmail.com';

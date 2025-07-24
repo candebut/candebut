@@ -6,7 +6,7 @@ import Head from 'next/head';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Candela Buttigliero, guionista',
+  title: 'Candela Buttigliero, guionista y directora',
   description: 'Guionista y analista de guion',
 };
 

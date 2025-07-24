@@ -1,6 +1,7 @@
 'use client';
 import { GenericPreviewData, PreviewData, YouTubePreviewData } from '@/types/types';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 function LinkPreview({ url = '', description = true }) {
   const [previewData, setPreviewData] = useState<PreviewData | null>(null);
@@ -84,7 +85,13 @@ function LinkPreview({ url = '', description = true }) {
   if ('videoId' in previewData) {
     return (
       <div onClick={handleClick} style={{ cursor: 'pointer' }}>
-        <img src={previewData.videoThumbnail} alt='Video Thumbnail' />
+        <Image
+          src={previewData.videoThumbnail}
+          alt='Video Thumbnail'
+          width={400}
+          height={225}
+          style={{ width: '100%', height: 'auto' }}
+        />
       </div>
     );
   }
@@ -93,7 +100,15 @@ function LinkPreview({ url = '', description = true }) {
     <div onClick={handleClick} style={{ cursor: 'pointer' }}>
       <h3>{previewData.title}</h3>
       {description ? <p>{previewData.description}</p> : null}
-      {previewData.image && <img src={previewData.image} alt='Link Preview' />}
+      {previewData.image && (
+        <Image
+          src={previewData.image}
+          alt='Link Preview'
+          width={400}
+          height={225}
+          style={{ width: '100%', height: 'auto' }}
+        />
+      )}
     </div>
   );
 }

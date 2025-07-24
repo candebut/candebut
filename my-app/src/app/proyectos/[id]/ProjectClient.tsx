@@ -8,12 +8,12 @@ import { useEffect } from 'react';
 import ContactButton from './PopupButton';
 import { ProjectClientProps } from '@/types/types';
 
-export default function ProjectClient({ project }: ProjectClientProps) {
+export default function ProjectClient(project: ProjectClientProps) {
   const router = useRouter();
 
   useEffect(() => {
     if (!project) router.push('/proyectos');
-  }, [project]);
+  }, [project, router]);
 
   if (!project) return null;
 
@@ -34,7 +34,7 @@ export default function ProjectClient({ project }: ProjectClientProps) {
                 Recorrido del proyecto
                 <p>{project.recorrido}</p></div>) : null}
                     
-            {project.estado !== 'estrenado' ? <ContactButton project={project} /> : null}
+            {project.estado !== 'estrenado' ? <ContactButton {...project} /> : null}
           </div>
         </div>
         <ColumnRight />

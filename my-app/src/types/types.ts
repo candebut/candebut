@@ -1,14 +1,12 @@
 export type ProjectClientProps = {
-  project: {
-    estado: string;
-    recorrido: any;
-    text: any;
-    id: string;
-    name: string;
-    description: string;
-    url: string;
-    supportImg: string;
-  } | undefined;
+    estado?: string;
+    recorrido?: any;
+    text?: any;
+    id?: string;
+    name?: string;
+    description?: string;
+    url?: string;
+    supportImg?: string;
 };
 
 export interface Project {

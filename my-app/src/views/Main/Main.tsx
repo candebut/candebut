@@ -1,5 +1,6 @@
 'use client';
 
+import Head from 'next/head';
 import { projects } from '@/app/data/data';
 import ColumnLeft from '@/components/ColumnLeft/ColumnLeft';
 import ColumnRight from '@/components/ColumnRight/ColumnRight';
@@ -24,46 +25,97 @@ const Main = () => {
   };
 
   return (
-    <div className='w100'>
+   <>
+     <Head>
+       {/* Básicos */}
+       <title>Candela Buttigliero – Guionista Argentina de Cine & Series</title>
+       <meta
+         name="description"
+         content="Portafolio de Candela Buttigliero, guionista argentina especializada en ficción, series y cine social. Proyectos: Visceral, Lapsus, y más."
+       />
+       <link rel="canonical" href="https://candelabuttigliero.com" />
+
+       {/* Open Graph */}
+       <meta property="og:title" content="Candela Buttigliero – Guionista Argentina" />
+       <meta
+         property="og:description"
+         content="Conocé los proyectos y la trayectoria de Candela Buttigliero, guionista argentina de cine y series."
+       />
+       <meta property="og:url" content="https://candelabuttigliero.com" />
+       <meta property="og:type" content="website" />
+       <meta property="og:image" content="https://candelabuttigliero.com/preview.jpg" />
+
+       {/* Twitter Cards */}
+       <meta name="twitter:card" content="summary_large_image" />
+       <meta name="twitter:site" content="@candela_b" />
+
+       {/* JSON‑LD para Organization/Person */}
+       <script
+         type="application/ldjson"
+         dangerouslySetInnerHTML={{
+           __html: `
+           {
+             "@context": "https://schema.org",
+             "@type": "Person",
+             "name": "Candela Buttigliero",
+             "jobTitle": "Guionista",
+             "url": "https://candelabuttigliero.com",
+             "sameAs": [
+               "https://www.instagram.com/candelabuttigliero",
+               "https://vimeo.com/candela"
+             ]
+           }
+           `,
+         }}
+       />
+     </Head>
+
+     <main className="w100">
+       <header className="main-header">
+         <h1 className="sr-only">Portafolio de Candela Buttigliero – Guionista Argentina</h1>
+       </header>
+
       <div className='main-wrapper'>
         <ColumnLeft />
-        <div className='main-projects-wrapper'>
-          {projects && projects.length
-            ? projects.map((project, index) => {
-                return (
-                  <div
-                    className='project'
-                    key={`project__${project.name}-${index}`}
-                    onClick={() => router.push(`/proyectos/${project.id}`)}
-                  >
-                    <div className='content'>
-                      <div className='content-overlay'></div>
-                      <video
-                        src={project.url}
-                        poster={project.supportImg}
-                        onMouseEnter={startPreview}
-                        onMouseLeave={stopPreview}
-                        loop
-                      ></video>
-                      <div className='content-details fadeIn-right'>
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                      </div>
-                    </div>
+        <section className='main-projects-wrapper' aria-label="Proyectos destacados">
+          {projects && projects.length ? (
+            projects.map((project, index) => (
+              <article
+                className='project'
+                key={`project__${project.name}-${index}`}
+                onClick={() => router.push(`/proyectos/${project.id}`)}
+              >
+                <div className='content'>
+                  <div className='content-overlay'></div>
+                  <video
+                    src={project.url}
+                    poster={project.supportImg}
+                    onMouseEnter={startPreview}
+                    onMouseLeave={stopPreview}
+                    loop
+                  />
+                  <div className='content-details fadeIn-right'>
+                    <h2>{project.name}</h2>
+                    <p>{project.description}</p>
                   </div>
-                );
-              })
-            : 'No projects available'}
-        </div>
+                </div>
+              </article>
+            ))
+          ) : (
+            <p>No projects available</p>
+          )}
+        </section>
         <ColumnRight />
       </div>
+
       <div className='arrow-icon'>
-        {' '}
-        <FaChevronDown />
+        <FaChevronDown aria-hidden="true" />
       </div>
 
       <Footer />
-    </div>
+   </main>
+ </>
+
   );
 };
 export default Main;
