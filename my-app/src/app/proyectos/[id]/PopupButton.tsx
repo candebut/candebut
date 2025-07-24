@@ -1,6 +1,15 @@
 'use client';
 
-export default function ContactButton({ project }) {
+interface Project {
+  name: string;
+  // add other properties if needed
+}
+
+interface ContactButtonProps {
+  project: Project;
+}
+
+export default function ContactButton({ project }: ContactButtonProps) {
   const handleClick = () => {
     const subject = encodeURIComponent(`Solicitud de dossier de venta para ${project.name}`);
     const email = 'candelabuttigliero@gmail.com';
